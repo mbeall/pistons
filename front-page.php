@@ -32,19 +32,19 @@ get_header(); ?>
 
         <div class="row">
           <div class="col-xs-6 col-sm-3 text-center">
-            <img src="http://localhost/~mbeall/mbeall/wp-content/uploads/2015/02/270x270_cat_image.png" alt="Category Image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/270x270_cat_image.png" alt="Category Image">
           </div>
 
           <div class="col-xs-6 col-sm-3 text-center">
-            <img src="http://localhost/~mbeall/mbeall/wp-content/uploads/2015/02/270x270_cat_image.png" alt="Category Image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/270x270_cat_image.png" alt="Category Image">
           </div>
 
           <div class="col-xs-6 col-sm-3 text-center">
-            <img src="http://localhost/~mbeall/mbeall/wp-content/uploads/2015/02/270x270_cat_image.png" alt="Category Image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/270x270_cat_image.png" alt="Category Image">
           </div>
 
           <div class="col-xs-6 col-sm-3 text-center">
-            <img src="http://localhost/~mbeall/mbeall/wp-content/uploads/2015/02/270x270_cat_image.png" alt="Category Image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/270x270_cat_image.png" alt="Category Image">
           </div>
         </div>
 
