@@ -93,6 +93,24 @@ body {
 .single .steel_product .entry-meta {
   line-height: 2em;
 }
+.archive .steel_product .post-inner {
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #fff;
+  border: 1px solid #080c11;
+}
+.archive .steel_product .entry-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+.archive .steel_product .price {
+  font-size: 16px;
+  font-weight: 400;
+}
+.product-category-image {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .btn {
   border-radius: 0;
 }
