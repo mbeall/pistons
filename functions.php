@@ -56,3 +56,10 @@ function pistons_save_steel_product_details() {
   }
 }
 add_action('steel_save_steel_product_meta', 'pistons_save_steel_product_details', 10);
+
+function pistons_option_defaults( $defaults ) {
+  $defaults['page_default_width'] = 'wide';
+
+  return $defaults;
+}
+add_filter( 'flint_option_defaults', 'pistons_option_defaults', 10 );

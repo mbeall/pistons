@@ -69,11 +69,18 @@ body {
 /* =Content
 ----------------------------------------------- */
 
+article,
+#comments {
+  background: #fff;
+}
 #prologue-wrap {
   margin-top: -1.5em;
   margin-bottom: 1em;
   color: #141e29;
   background: #dde5ed;
+}
+.page #prologue-wrap {
+  padding-top: 1.5em;
 }
 .single .steel_product {
   height: 665px;
@@ -275,6 +282,13 @@ fieldset[disabled] .navbar-primary .btn-link:focus {
 }
 .nav-pills > li > a {
   border-radius: 0;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #444;
+  text-decoration: none;
+  background-color: #eee;
 }
 
 
