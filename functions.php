@@ -10,7 +10,7 @@ function pistons_nav_menus( $nav_menus ) {
   $pistons_nav_menus = array(
     'branding' => __( 'Header Menu', 'flint' ),
   );
-  return array_merge( $nav_menus, $pistons_nav_menus );
+  return wp_parse_args( $pistons_nav_menus, $nav_menus );
 }
 add_filter('flint_nav_menus', 'pistons_nav_menus');
 
