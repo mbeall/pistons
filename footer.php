@@ -14,7 +14,7 @@
     <div class="row">
       <div id="custom-footer" class="col-xs-12 col-md-6">
         <?php flint_custom_footer(); ?>
-<a href="<?php echo get_site_url(); ?>/terms-of-use">Terms of Use</a> | <a href="<?php echo get_site_url(); ?>/privacy-policy">Privacy Policy"</a>
+        <a href="<?php echo get_site_url(); ?>/terms-of-use">Terms of Use</a> | <a href="<?php echo get_site_url(); ?>/privacy-policy">Privacy Policy</a>
       </div>
       <div id="credits" class="col-xs-12 col-md-6">
         <?php $theme = wp_get_theme(); ?>
