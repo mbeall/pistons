@@ -33,9 +33,12 @@
         <div class="clearfix"><p></p></div>
 
         <div class="entry-meta">
+          <?php echo steel_get_product_id(); ?>
+          <?php echo steel_get_product_manufacturer(); ?>
+          <?php echo steel_get_product_id_alt(); ?>
           <?php echo steel_get_product_dimensions(); ?>
           <?php echo steel_get_product_weight(); ?>
-          <?php echo steel_get_product_id_alt(); ?>
+          <?php echo steel_get_product_color(); ?>
           <?php echo steel_get_product_warranty('long'); ?>
         </div><!-- .entry-meta -->
 
