@@ -12,19 +12,23 @@
  */
 
 get_header(); ?>
-<?php flint_get_widgets('header'); ?>
+<?php flint_get_sidebar('header'); ?>
 
   <div id="primary" class="content-area container">
 
     <div class="row">
 
-      <?php flint_get_widgets('left'); ?>
+      <?php flint_get_sidebar('left'); ?>
 
       <div id="content" role="main" <?php flint_content_class(); ?>>
 
         <span class="hidden-xs">
           <?php
-            $options = flint_get_options();
+            if ( function_exists( 'flint_options' ) ) {
+              $options = flint_options();
+            } else {
+              $options = flint_get_options();
+            }
             if (function_exists('steel_slideshow') && $options['front_page_slider'] != 0)
               echo steel_slideshow( $options['front_page_slider'], 'featured-slider' );
           ?>
@@ -50,7 +54,7 @@ get_header(); ?>
 
       </div><!-- #content .site-content -->
 
-      <?php flint_get_widgets('right'); ?>
+      <?php flint_get_sidebar('right'); ?>
 
     </div><!-- .row -->
 
@@ -58,5 +62,5 @@ get_header(); ?>
 
 </div><!-- #page -->
 
-<?php flint_get_widgets('footer'); ?>
+<?php flint_get_sidebar('footer'); ?>
 <?php get_footer(); ?>
