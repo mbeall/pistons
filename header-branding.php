@@ -22,7 +22,13 @@
           <div class="hidden-xs col-sm-offset-4 col-sm-6 col-md-offset-4 col-md-6 col-lg-offset-6 col-lg-4" id="search_nav">
             <?php get_search_form(); ?>
             <p></p>
-            <?php wp_nav_menu( array( 'theme_location' => 'branding', 'container' => false, 'menu_class' => 'nav nav-pills col-xs-9', 'fallback_cb' => false, 'walker' => new Flint_Bootstrap_Menu ) ); ?>
+            <?php
+            if ( class_exists( 'Flint_Walker_Nav_Menu_Navbar' ) ) {
+              wp_nav_menu( array( 'theme_location' => 'branding', 'container' => false, 'menu_class' => 'nav nav-pills col-xs-9', 'fallback_cb' => false, 'walker' => new Flint_Walker_Nav_Menu_Navbar ) );
+            } else {
+              wp_nav_menu( array( 'theme_location' => 'branding', 'container' => false, 'menu_class' => 'nav nav-pills col-xs-9', 'fallback_cb' => false, 'walker' => new Flint_Bootstrap_Menu ) );
+            }
+            ?>
             <a class="btn btn-primary col-xs-3"><i class="glyphicon glyphicon-shopping-cart"></i> Cart</a>
           </div>
         </div><!-- .row -->
