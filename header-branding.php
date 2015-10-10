@@ -4,8 +4,8 @@
  *
  * Displays the branding header element
  *
- * @package Flint
- * @since 1.3.0
+ * @package Flint\Pistons
+ * @since 0.1.0
  */
 ?>
 

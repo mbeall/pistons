@@ -2,8 +2,8 @@
 /**
  * The template used for displaying individual Steel Product
  *
- * @package Flint
- * @since 1.3.0
+ * @package Flint\Pistons
+ * @since 0.1.0
  */
 ?>
 
