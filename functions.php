@@ -3,7 +3,7 @@
  * Pistons functions and definitions
  *
  * @package Flint\Pistons
- * @since Pistons 0.0.0
+ * @since 0.1.0
  */
 
 function pistons_nav_menus( $nav_menus ) {
