@@ -3,11 +3,11 @@
  * The default page template
  *
  * @package Flint\Pistons
- * @since Pistons 0.0.0
+ * @since 0.1.0
  */
 
 get_header(); ?>
-<?php flint_get_widgets('header'); ?>
+<?php flint_get_sidebar('header'); ?>
 
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -78,5 +78,5 @@ get_header(); ?>
 
 </div><!-- #page -->
 
-<?php flint_get_widgets('footer'); ?>
+<?php flint_get_sidebar('footer'); ?>
 <?php get_footer(); ?>

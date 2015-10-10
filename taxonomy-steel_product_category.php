@@ -3,11 +3,11 @@
  * The template for displaying Product Category pages
  *
  * @package Flint\Pistons
- * @since Pistons 0.0.0
+ * @since 0.1.0
  */
 
 get_header(); ?>
-<?php flint_get_widgets('header'); ?>
+<?php flint_get_sidebar('header'); ?>
 <div id="prologue-wrap">
   <section id="prologue" class="container">
     <div class="row">
@@ -169,6 +169,6 @@ get_header(); ?>
 
 </div><!-- #page -->
 
-<?php flint_get_widgets('footer'); ?>
+<?php flint_get_sidebar('footer'); ?>
 <?php get_footer(); ?>
 
