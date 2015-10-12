@@ -27,7 +27,13 @@ get_header(); ?>
 
     <div class="row">
 
-      <?php flint_get_spacer('left'); ?>
+      <?php
+        if ( function_exists( 'flint_post_margin' ) ) {
+          flint_post_margin( true );
+        } else {
+          flint_get_spacer( 'left' );
+        }
+      ?>
 
       <div id="content" role="main" <?php flint_content_class(); ?>>
 
@@ -68,7 +74,13 @@ get_header(); ?>
 
       </div><!-- #content -->
 
-      <?php flint_get_spacer('right'); ?>
+      <?php
+        if ( function_exists( 'flint_post_margin' ) ) {
+          flint_post_margin();
+        } else {
+          flint_get_spacer( 'right' );
+        }
+      ?>
 
     </div><!-- .row -->
 
